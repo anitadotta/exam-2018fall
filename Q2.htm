@@ -32,8 +32,32 @@
 
     <script type="text/javascript">
 
-    </script>
-</head>
+            function change() {
+            document.getElementById("t1").innerHTML ="Web Tech Rocks";
+            document.getElementById("t1").style.backgroundColor = "yellow";
+            document.getElementById("t1").style.color ="red";
+            document.getElementById("t1").style.fontSize = "2em";
+            document.getElementById("t1").style.fontFamily ="lucinda handwriting";
+            document.getElementById("t2").innerHTML = "";
+            document.getElementById("t2").style.backgroundColor = "";
+            }
+            
+            function change2(){
+            document.getElementById("t2").innerHTML = "Web Tech Sucks"
+            document.getElementById("t2").style.backgroundColor = "blue";
+            document.getElementById("t2").style.color ="green";
+            document.getElementById("t2").style.fontSize = "2em";
+            document.getElementById("t2").style.fontStyle ="bold"
+            document.getElementById("t2").style.fontFamily = "arial";
+            document.getElementById("t1").innerHTML = "";
+            document.getElementById("t1").style.backgroundColor = "";
+            }
+                    
+        </script>
+
+        
+    </head>
+
 
 <body>
     <h1>Web Tech Exam - Q2 (20 points)</h1>
@@ -47,16 +71,18 @@
         as necessary.
     </p>
 
-    <table>
+    <table id="tab">
         <tr>
-            <td><img src="smiley.jpg" alt="Smiling Face" title="Smile"></td>
-            <td>Web Tech Rocks!</td>
+            <td><img src="smiley.jpg" alt="Smiling Face" title="Smile" name="smile" id="smile"  onclick="change()"></td>
+            <td id="t1"></td>
+            
         </tr>
         <tr>
-            <td><img src="frown.jpg" alt="Frown Face" title="Sad"></td>
-            <td>Web Tech Sucks!</td>
+            <td><img src="frown.jpg" alt="Frown Face" title="Sad" name="sad" id="sad" onclick="change2()"></td>
+            <td id="t2"></td>
         </tr>
 
     </table>
+          
 </body>
 </html>
